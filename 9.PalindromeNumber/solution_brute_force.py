@@ -11,9 +11,16 @@ def isPalindrome(x):
     return reversed_str == main_str
 
 
-print(isPalindrome(x=121))
-print(isPalindrome(x=-121))
-print(isPalindrome(x=10))
+def run_tests():
+    assert isPalindrome(x=121) == True
+    assert isPalindrome(x=-121) == False
+    assert isPalindrome(x=10) == False
+    print("All test cases passed...")
+
+
+if __name__ == "__main__":
+    run_tests()
+
 
 # x = 124
 # Iteration 1: "1" + "" = "1"
