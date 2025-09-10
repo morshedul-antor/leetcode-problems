@@ -5,9 +5,9 @@
 def remove_element(nums: list, val: int):
     count = 0
 
-    for i in range(len(nums)):
-        if nums[i] != val:
-            nums[count] = nums[i]
+    for num in nums:
+        if num != val:
+            nums[count] = num
             count += 1
 
     return count
