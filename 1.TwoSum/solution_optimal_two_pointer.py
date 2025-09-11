@@ -1,6 +1,7 @@
 # Time-Complexity: O(n)
 # Space-Complexity: O(1) -- if the array is sorted
 
+
 def two_sum(nums, target):
     left = 0
     right = len(nums) - 1
