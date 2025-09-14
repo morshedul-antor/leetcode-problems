@@ -3,12 +3,12 @@
 
 
 def reverse_string(s):
-    reverse = []
+    reversed = []
 
     for i in range(len(s)-1, -1, -1):
-        reverse.append(s[i])
+        reversed.append(s[i])
 
-    return reverse
+    return reversed
 
 
 def run_tests():
