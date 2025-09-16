@@ -7,7 +7,7 @@ def valid_perfect_square(num):
     right = (num//2) + 1
 
     while left <= right:
-        mid = (left + right) // 2
+        mid = (left+right) // 2
 
         if mid * mid == num:
             return True
