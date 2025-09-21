@@ -3,18 +3,16 @@
 
 
 def isPalindrome(x):
-    if x < 0:
+    if x < 0 or (x % 10 != 0 and x != 0):
         return False
 
-    original_num = x
-    reverse_num = 0
+    reverse_half = 0
 
-    while (x > 0):
-        temp = x % 10
-        x = x // 10
-        reverse_num = reverse_num * 10 + temp
+    while (x > reverse_half):
+        reverse_half = reverse_half * 10 + x % 10
+        x //= 10
 
-    return reverse_num == original_num
+    return x == reverse_half or x == reverse_half // 10
 
 
 def run_tests():
