@@ -5,7 +5,7 @@
 def word_pattern(pattern: str, s: str) -> bool:
     s = s.split()
     seen = {}
-    word = set()
+    words = set()
 
     if len(pattern) != len(s):
         return False
@@ -13,14 +13,13 @@ def word_pattern(pattern: str, s: str) -> bool:
     for i, val in enumerate(pattern):
         if val in seen:
             if seen[val] != s[i]:
-                continue
-            return False
+                return False
         else:
-            if s[i] in word:
+            if s[i] in words:
                 return False
 
             seen[val] = s[i]
-            word.add(s[i])
+            words.add(s[i])
 
     return True
 
