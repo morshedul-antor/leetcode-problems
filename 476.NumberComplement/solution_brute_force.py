@@ -18,6 +18,7 @@ def number_complement(num: int) -> int:
 def run_tests():
     assert number_complement(num=5) == 2
     assert number_complement(num=1) == 0
+    assert number_complement(num=7) == 0
     print("All test cases passed...")
 
 
