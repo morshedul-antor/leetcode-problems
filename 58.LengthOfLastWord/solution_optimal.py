@@ -12,13 +12,15 @@ def lenth_of_last_word(s: str) -> int:
             if count > 0:
                 return count
 
-    return -1
+    if count:
+        return count
 
 
 def run_tests():
     assert lenth_of_last_word(s="Hello World") == 5  # "World"
     assert lenth_of_last_word(s="   fly me   to   the moon  ") == 4  # "moon"
     assert lenth_of_last_word(s="luffy is still joyboy") == 6  # "joyboy"
+    assert lenth_of_last_word(s="a") == 1  # "a"
     print("All test cases passed...")
 
 
