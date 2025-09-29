@@ -12,6 +12,9 @@ def plus_one(digits):
 
     return [1] + digits  # if all digits are 9
 
+    # digits.insert(0, 1)
+    # return digits
+
 
 def run_tests():
     assert plus_one(digits=[1, 2, 3]) == [1, 2, 4]
